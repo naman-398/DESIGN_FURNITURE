@@ -3,11 +3,7 @@
 .webkitstroke:hover {
   -webkit-text-stroke: 0.7px #fff;
 }
-.latest .slick-current {
-  background: #fff;
-  box-shadow: 6px 13px 38px 0px rgba(0, 0, 0, 0.12);
-  margin: px;
-}
+
 .sliderbtnhover:hover svg path{
 stroke: white;
 fill: white;

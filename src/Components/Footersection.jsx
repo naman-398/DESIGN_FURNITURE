@@ -23,11 +23,11 @@ const Footersection = () => {
                         </div>
                         <p className=' font-roboto font-normal text-[14px] text-[#FFF] pt-[10px] lg992:pt-[30px] max-w-[338px] leading-[normal]' data-aos='zoom-out'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc in leo vestibulum, at congue erat accumsan. Suspendisse potenti. Suspendisse vitae vestibulum sapien.</p>
                         <div className=' flex items-center pt-[8px] sm576:pt-[23px] gap-[12.49px] cursor-pointer' data-aos='zoom-out'>
-                            <Instagram />
-                            <div className=' w-[23px] h-[23px] rounded-full border-[1px] border-[#FFF] flex justify-center items-center'>
+                           <a href="https://www.instagram.com/" target='_blank'  className=' duration-300 hover:translate-y-[-5px]'><Instagram /></a> 
+                            <a href='https://twitter.com/login?lang=en' target='_blank' className=' w-[23px] h-[23px] duration-300 hover:translate-y-[-5px] rounded-full border-[1px] border-[#FFF] flex justify-center items-center'>
                                 <Twitter />
-                            </div>
-                            <Facebook />
+                            </a>
+                            <a href="https://www.facebook.com/" target='_blank' className=' duration-300 hover:translate-y-[-5px]'><Facebook /></a>
                         </div>
                     </div>
                     <div className='w-full sm:w-7/12 md:w-1/2 lg992:w-5/12 px-3'>

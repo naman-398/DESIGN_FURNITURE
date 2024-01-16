@@ -37,7 +37,10 @@ const Testinomalsection = () => {
     ]
     return (
         <div className=' mx-auto px-3 max-w-[1320px] md:pt-[30px] overflow-hidden'>
-            <p className='text-[#BD7D41] text-lg sm:text-xl font-poppins font-normal text-center sm:text-start' data-aos='zoom-out'>Customer Says</p>
+            <div className=' flex items-center xs450px:flex-row  flex-col gap-[2px]  xs450px:gap-[11px]'  data-aos='zoom-in'>
+                <hr className=' max-w-[95px] w-full h-[1px] bg-[#000000] border-t-[unset]' />
+                <p className='text-[#BD7D41] text-lg sm:text-xl font-poppins font-normal text-center sm:text-start' data-aos='zoom-out'>Customer Says</p>
+            </div>
             <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-poppins font-bold max-w-[436px] mt-3 leading-normal ' data-aos='zoom-out'>Testimonial</h2>
             <div className='mt-[51px] mb-12 sm:mb-16 md:mb-20 lg:mb-[109px]'>
                 <div data-aos='zoom-out'>
