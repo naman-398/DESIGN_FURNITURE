@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import s2_img from "../Images/s2-img1.webp";
 import Commonbtn from '../Commonbtn/Commonbtn';
-const videoUrl = 'https://www.youtube.com/watch?v=mw01mY7llHQ&ab_channel=SSKFURNITURE';
+import sofaviddeo from "../Video/sofaviddeo.mp4";
 const Welcomesection = () => {
     useEffect(() => {
         AOS.init(
@@ -20,14 +20,15 @@ const Welcomesection = () => {
     const closeModal = () => {
         setShowModal1(false);
     };
+    
     if (showModal1 === true) { document.body.classList.add('overflow-hidden') }
     else { document.body.classList.remove('overflow-hidden') }
     return (
         <div className=' max-w-[1341px] mx-auto px-3 pt-[134px] overflow-hidden'>
             {showModal1 && (
                 <div className=' fixed w-full h-full top-[0%] start-0 flex justify-center items-center z-[5] backdrop-blur-md' onClick={closeModal}>
-                    <video  className=" max-w-[400px] max-h-[400px] w-full h-full" controls>
-                        <source src={videoUrl} type="video/mp4" />
+                    <video  className=" max-w-[400px] max-h-[400px] w-full h-full" autoPlay controls>
+                        <source  src={sofaviddeo} type="video/mp4" />
                     </video>
                 </div>)}
             <div className=' flex flex-wrap flex-row -mx-3'>
