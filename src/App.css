@@ -19,7 +19,7 @@ fill: white;
     transition: all 300ms linear;
     z-index: 5;
   }
-  .overflow_986uhidden{
+  .overflow_hidden{
     overflow: hidden;
   }
 }
