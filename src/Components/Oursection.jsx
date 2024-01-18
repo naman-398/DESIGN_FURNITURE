@@ -41,7 +41,7 @@ const Oursection = () => {
         );
       }, [])
     const mycard = mycardinfo.map((mycard) => (
-        <div className=' w-full sm576:w-1/2 lg:w-1/3 px-3 pt-[42px]'>
+        <div className=' w-full sm576:w-1/2 lg:w-1/3 px-3 pt-[10px] sm:pt-[42px]'>
         <div className='p-[10px_23px_40px_10px] md:p-[18px_23px_53px_23px] lg:p-[18px_10px_53px_10px] min-[1200px]:p-[18px_23px_53px_23px] max-w-[422px] max-h-[483px] w-full h-full duration-300 cursor-pointer hover:shadow-[6px_13px_38px_0px] hover:shadow-[#0000001f] mx-auto lg:mx-0'  data-aos='zoom-in'>
             <img src={mycard.img} alt="" />
             <div className=' flex items-center justify-between mt-[19px]'>

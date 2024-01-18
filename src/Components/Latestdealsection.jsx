@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 const CustomPrevArrow = (props) => {
     return (
-        <button {...props} className=" rounded-full shadow-[#00000014] shadow-[2px_7px_16px] !hidden min-[470px]:!flex justify-between items-center p-[22px_10px] min-[1550px]:p-[42px_29px] bg-[#FFF] absolute min-[1450px]:top-[43%] top-[-15%] left-[55%] min-[550px]:left-[65%] min-[900px]:left-[75%] min-[1450px]:left-[-5%] min-[1550px]:left-[-8%] z-[1] sliderbtnhover duration-300 hover:bg-[#000] ">
+        <button {...props} className=" rounded-full shadow-[#00000014] shadow-[2px_7px_16px] !hidden min-[470px]:!flex justify-between items-center p-[22px_10px] min-[1550px]:p-[42px_29px] bg-[#FFF] absolute min-[1450px]:top-[38%] top-[-15%] left-[55%] min-[550px]:left-[65%] min-[900px]:left-[75%] min-[1450px]:left-[-5%] min-[1550px]:left-[-8%] z-[1] sliderbtnhover duration-300 hover:bg-[#000] ">
             <Prevbutton/>
         </button>
     );
@@ -19,7 +19,7 @@ const CustomPrevArrow = (props) => {
 
 const CustomNextArrow = (props) => {
     return (
-        <button {...props} className=" rounded-full shadow-[#00000014] shadow-[2px_7px_16px] !hidden min-[470px]:!flex justify-between items-center p-[22px_10px] min-[1550px]:p-[42px_29px] absolute bg-[#FFF] top-[-15%] min-[1450px]:top-[43%] right-[10%] min-[1450px]:right-[-5%] min-[1550px]:right-[-8%] z-[1] sliderbtnhover duration-300 hover:bg-[#000] ">
+        <button {...props} className=" rounded-full shadow-[#00000014] shadow-[2px_7px_16px] !hidden min-[470px]:!flex justify-between items-center p-[22px_10px] min-[1550px]:p-[42px_29px] absolute bg-[#FFF] top-[-15%] min-[1450px]:top-[38%] right-[10%] min-[1450px]:right-[-5%] min-[1550px]:right-[-8%] z-[1] sliderbtnhover duration-300 hover:bg-[#000] ">
             <Nxtbutton />
         </button>
     );
