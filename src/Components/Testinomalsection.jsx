@@ -51,7 +51,7 @@ const Testinomalsection = () => {
             <h2 className='text-[#243040] text-2xl sm:text-3xl lg:text-[35px] font-poppins font-bold max-w-[436px] mt-3 leading-normal ' data-aos='zoom-out'>Testimonial</h2>
             <div className='mt-[51px] mb-12 sm:mb-16 md:mb-20 lg:mb-[109px]'>
                 <div data-aos='zoom-out'>
-                    <Swiper loop={false}     autoplay={{delay: 500,disableOnInteraction: true}} spaceBetween={55} breakpoints={{ 300: { slidesPerView: 2.5, }, 400: { slidesPerView: 3, }, 600: { slidesPerView: 4, }, 700: { slidesPerView: 5, }, 1024: { slidesPerView: 7, }, }} centeredSlides={true} slidesPerView={1} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Controller, Thumbs]} className="mySwiper2">
+                    <Swiper loop={true}  autoplay={{delay: 500}} spaceBetween={55} breakpoints={{ 300: { slidesPerView: 2.5, }, 400: { slidesPerView: 3, }, 600: { slidesPerView: 4, }, 700: { slidesPerView: 5, }, 1024: { slidesPerView: 7, }, }} centeredSlides={true} slidesPerView={1} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Controller, Thumbs]} className="mySwiper2">
                         {
                             SlideData.map((items, index) => (
                                 <SwiperSlide key={index}>
@@ -62,7 +62,7 @@ const Testinomalsection = () => {
                     </Swiper>
                 </div>
                 <div className='sm:mt-5'>
-                    <Swiper onSwiper={setThumbsSwiper} centeredSlides={true} loop={false} spaceBetween={10} slidesPerView={1} watchSlidesProgress={true}  modules={[EffectFade, Thumbs]} className="mySwiper" >
+                    <Swiper onSwiper={setThumbsSwiper} centeredSlides={true} loop={true} autoplay={{delay: 500}} spaceBetween={10} slidesPerView={1} watchSlidesProgress={true}  modules={[EffectFade, Thumbs]} className="mySwiper" >
                         {
                             SlideData.map((items, index) => (
                                 <SwiperSlide key={index}>

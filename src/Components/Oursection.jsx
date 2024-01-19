@@ -49,8 +49,17 @@ const Oursection = () => {
       function close () {
         setSidebar(false)
       }
+      function removecart(index) {
+        const leftcart = [...cart];
+        leftcart.splice(index, 1);
+        setCart(leftcart);
+
+        if (leftcart.length === 0) {
+            setSidebar(false);
+        }
+    }
  const sideCard= cart.map((mycard,index)=>(
-    <div key={index} className='p-[10px_23px_40px_10px] md:p-[18px_23px_53px_23px] lg:p-[18px_10px_53px_10px] min-[1200px]:p-[18px_23px_53px_23px] max-w-[422px] max-h-[483px] w-full h-full duration-300 cursor-pointer hover:shadow-[6px_13px_38px_0px] hover:shadow-[#0000001f] mx-auto bg-[#FFF] mt-3'  data-aos='zoom-in'>
+    <div key={index} className='!p-[10px_10px_10px_10px] md:!p-[18px_23px_18px_23px] lg:!p-[18px_10px_18px_10px] min-[1200px]:!p-[18px_23px_18px_23px]  duration-300 cursor-pointer hover:shadow-[6px_13px_38px_0px] hover:shadow-[#0000001f] mx-auto bg-[#FFF] mt-3'  data-aos='zoom-in'>
     <img src={mycard.img} alt="img" />
     <div className=' flex items-center justify-between mt-[19px]'>
         <p className=' font-medium font-poppins text-[20px] text-[#000]'>Single Sofa</p>
@@ -65,13 +74,13 @@ const Oursection = () => {
     <p className=' text-[#000000b3] text-[18px] font-normal font-poppins leading-[normal] mt-[16px]'>Lorem ipsum dolor </p>
     <div className=' flex items-center justify-between pt-[16px]'>
         <p className=' font-poppins text-[23.667px] md:text-[28.667px] font-semibold text-[#000]'>₹ 1200.00</p>
-        <Commonbtn padding=' !text-[14px] !p-[10px_10px] md:!p-[10px_12px] !font-medium hover:!shadow-[inset_.5rem_0_0_0]' text='ADD TO CART'/>
+        <Commonbtn  fun={() => removecart(index)} padding=' !text-[12px] !p-[10px_10px] md:!p-[10px_12px] !font-medium hover:!shadow-[inset_.5rem_0_0_0]' text='REMOVE TO CART'/>
     </div>
 </div>
  ))
     const mycard = mycardinfo.map((mycard) => (
         <div className=' w-full sm576:w-1/2 lg:w-1/3 px-3 pt-[10px] sm:pt-[42px]'>
-        <div className='p-[10px_23px_40px_10px] md:p-[18px_23px_53px_23px] lg:p-[18px_10px_53px_10px] min-[1200px]:p-[18px_23px_53px_23px] max-w-[422px] max-h-[483px] w-full h-full duration-300 cursor-pointer hover:shadow-[6px_13px_38px_0px] hover:shadow-[#0000001f] mx-auto lg:mx-0'  data-aos='zoom-in'>
+        <div className='p-[18px_10px_40px_10px] md:p-[18px_23px_53px_23px] lg:p-[18px_10px_53px_10px] min-[1200px]:p-[18px_23px_53px_23px] max-w-[422px] max-h-[483px] w-full h-full duration-300 cursor-pointer hover:shadow-[6px_13px_38px_0px] hover:shadow-[#0000001f] mx-auto lg:mx-0'  data-aos='zoom-in'>
             <img src={mycard.img} alt="" />
             <div className=' flex items-center justify-between mt-[19px]'>
                 <p className=' font-medium font-poppins text-[20px] text-[#000]'>Single Sofa</p>
@@ -93,7 +102,7 @@ const Oursection = () => {
     ))
     return (
         <>
-        <div className={`${sidebar ?"left-0":"left-[-100%]"} overflow-y-scroll bg-[linear-gradient(270deg,#8c939b_0%,#243040_100%)] w-[27%] duration-500 ease-in-out h-full fixed top-0 pt-[40px] z-30`}>
+        <div className={`${sidebar ?"left-0":"left-[-100%]"} overflow-y-scroll bg-[linear-gradient(270deg,#8c939b_0%,#243040_100%)] min-[1200px]:w-[27%] lg992:w-[35%] sm450px:w-[65%] w-[80%]  sm576:w-[50%] px-3 duration-500 ease-in-out h-full fixed top-0 pt-[40px] z-30`}>
             <span className=" absolute font-black text-[#FFFFFF] text-[30px] right-2 top-2 cursor-pointer" onClick={close}>X</span>
             {sideCard}
         </div>
